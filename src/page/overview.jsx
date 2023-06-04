@@ -9,6 +9,7 @@ import Picheadpig from "../assets/image/Picheadpig.png";
 import Picheadlamb from "../assets/image/Picheadlamb.png";
 import Picheadchicken from "../assets/image/Picheadchicken.png";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -47,7 +48,9 @@ export default function AutoGrid() {
           sx={styles.gridContainer}
         >
           <Grid item xs>
-            <img src={Picheadbeef} alt="Beef" />
+            <Link to="/cutofbeef">
+              <img src={Picheadbeef} alt="Beef" />
+            </Link>
           </Grid>
           <Grid item xs={6} md={8}>
             <Typography variant="h1" sx={{ marginBottom: "30px" }}>
@@ -60,11 +63,20 @@ export default function AutoGrid() {
               you with the details of the meat cuts for that animal.
             </Typography>
             <Typography sx={{ marginTop: "30px" }}>
-              <Button variant="contained">Back</Button>
+              <Button
+                sx={{ width: "100px" }}
+                variant="contained"
+                component={Link}
+                to="/"
+              >
+                Back
+              </Button>
             </Typography>
           </Grid>
           <Grid item xs>
-            <img src={Picheadpig} alt="Pig" />
+            <Link to="/cutofpork">
+              <img src={Picheadpig} alt="Pig" />
+            </Link>
           </Grid>
         </Grid>
         <Grid
@@ -75,10 +87,14 @@ export default function AutoGrid() {
           sx={styles.gridContainer}
         >
           <Grid item xs>
-            <img src={Picheadlamb} alt="Lamb" />
+            <Link to="/cutoflamb">
+              <img src={Picheadlamb} alt="Lamb" />
+            </Link>
           </Grid>
           <Grid item xs>
-            <img src={Picheadchicken} alt="Chicken" />
+            <Link to="/cutofchicken">
+              <img src={Picheadchicken} alt="Chicken" />
+            </Link>
           </Grid>
         </Grid>
       </Box>

@@ -21,7 +21,7 @@ const Home = () => {
               individual, or simply curious about different types of meat.
             </Typography>
             <Button component={Link} to="/overview" variant="contained">
-              Readmore
+              Read more
             </Button>
 
             <Box sx={{ flexgrow: 1, textAlign: "end", p: 6 }}>
