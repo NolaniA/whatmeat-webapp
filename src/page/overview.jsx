@@ -3,8 +3,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { Stack, Typography } from "@mui/material";
-import Picheadbeef from "../assets/image/Headbeef.png";
+import { Typography, colors } from "@mui/material";
+import Picheadbeef from "../assets/image/Picheadbeef.png";
+import Picheadpig from "../assets/image/Picheadpig.png";
+import Picheadlamb from "../assets/image/Picheadlamb.png";
+import Picheadchicken from "../assets/image/Picheadchicken.png";
+import { Button } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -14,24 +18,70 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
+  },
+  contentContainer: {
+    margin: "0 20px",
+    textAlign: "center",
+  },
+  gridContainer: {
+    marginTop: "20px", // ระยะห่างด้านบนของ Grid container
+    marginBottom: "20px", // ระยะห่างด้านล่างของ Grid container
+  },
+};
+
 export default function AutoGrid() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={4} alignItems="center">
-        <Grid item xs>
-          <img src={{ Picheadbeef }} />
+    <Box sx={styles.container}>
+      <Box sx={styles.contentContainer}>
+        <Grid
+          container
+          spacing={4}
+          alignItems="center"
+          justifyContent="center"
+          sx={styles.gridContainer}
+        >
+          <Grid item xs>
+            <img src={Picheadbeef} alt="Beef" />
+          </Grid>
+          <Grid item xs={6} md={8}>
+            <Typography variant="h1" sx={{ marginBottom: "30px" }}>
+              The Butcher's Guide
+            </Typography>
+            <Typography variant="caption" sx={{ colors: "#AEB2BC" }}>
+              Here are the categories of animals you can choose from to view the
+              details of their meat cuts: Beef, Lamb, Pork and Chicken Please
+              let me know which category you'd like to explore, and I'll provide
+              you with the details of the meat cuts for that animal.
+            </Typography>
+            <Typography sx={{ marginTop: "30px" }}>
+              <Button variant="contained">Back</Button>
+            </Typography>
+          </Grid>
+          <Grid item xs>
+            <img src={Picheadpig} alt="Pig" />
+          </Grid>
         </Grid>
-        <Grid item xs={6} md={8}>
-          <Typography variant="caption">
-            Welcome to Meat Check, a tool that helps you explore various meat
-            options! Whether you're a cooking enthusiast, health-conscious
-            individual, or simply curious about different types of meat.
-          </Typography>
+        <Grid
+          container
+          spacing={4}
+          alignItems="center"
+          justifyContent="center"
+          sx={styles.gridContainer}
+        >
+          <Grid item xs>
+            <img src={Picheadlamb} alt="Lamb" />
+          </Grid>
+          <Grid item xs>
+            <img src={Picheadchicken} alt="Chicken" />
+          </Grid>
         </Grid>
-        <Grid item xs>
-          <Item>xs</Item>
-        </Grid>
-      </Grid>
+      </Box>
     </Box>
   );
 }
