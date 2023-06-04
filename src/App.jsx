@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "@emotion/react";
-import theme from "./theme";
+import Theme from "./theme";
 import Home from "./page/home";
 import Overview from "./page/overview";
 import { Route, Routes } from "react-router-dom";
@@ -11,7 +11,7 @@ import Cutofchicken from "./page/cutofchicken";
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="overview" element={<Overview />} />

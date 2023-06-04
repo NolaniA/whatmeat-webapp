@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 import "@fontsource/berkshire-swash";
 import "@fontsource/prompt";
-// import CraftBg from "./assets/image/bgs.png";
+import Craftbg from "../src/assets/image/bgs.png";
 
 const theme = createTheme({
   typography: {
@@ -16,13 +16,6 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: { root: { backgroundColor: "#211413" } },
     },
-    // MuiInput: {
-    //     variants:
-    //     // styleOverrides: {
-    //     //     root: { backgroundColor: "#211413" }
-    //     },
-    // },
-    // Name of the component ⚛️
     MuiButton: {
       styleOverrides: {
         containedPrimary: {
@@ -32,17 +25,17 @@ const theme = createTheme({
         },
       },
     },
-    // overrides: {
-    //   MuiCssBaseline: {
-    //     "@global": {
-    //       body: {
-    //         backgroundImage: `url(${CraftBg})`,
-    //         backgroundRepeat: "no-repeat",
-    //         backgroundSize: "cover",
-    //       },
-    //     },
-    //   },
-    // },
+    overrides: {
+      MuiCssBaseline: {
+        "@global": {
+          body: {
+            backgroundImage: `url(${Craftbg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          },
+        },
+      },
+    },
   },
 });
 
