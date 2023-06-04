@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import Logo from "../assets/image/Iconbeef.png";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -61,7 +62,9 @@ export default function SearchAppBar() {
         sx={{ height: "80px", justifyContent: "center" }}
       >
         <Toolbar>
-          <img src={Logo} />
+          <Link to="/overview">
+            <img src={Logo} />
+          </Link>
           <Typography
             noWrap
             component="div"
