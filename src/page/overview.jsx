@@ -34,6 +34,12 @@ const styles = {
     marginTop: "20px", // ระยะห่างด้านบนของ Grid container
     marginBottom: "20px", // ระยะห่างด้านล่างของ Grid container
   },
+  imgContainer: {
+    transition: "transform 0.3s", // เพิ่ม transition effect
+    "&:hover": {
+      transform: "scale(1.5)", // เพิ่ม transform scale เมื่อ hover
+    },
+  },
 };
 
 export default function AutoGrid() {
@@ -47,7 +53,7 @@ export default function AutoGrid() {
           justifyContent="center"
           sx={styles.gridContainer}
         >
-          <Grid item xs>
+          <Grid item xs sx={styles.imgContainer}>
             <Link to="/cutofbeef">
               <img src={Picheadbeef} alt="Beef" />
             </Link>
@@ -73,7 +79,7 @@ export default function AutoGrid() {
               </Button>
             </Typography>
           </Grid>
-          <Grid item xs>
+          <Grid item xs sx={styles.imgContainer}>
             <Link to="/cutofpork">
               <img src={Picheadpig} alt="Pig" />
             </Link>
@@ -86,12 +92,12 @@ export default function AutoGrid() {
           justifyContent="center"
           sx={styles.gridContainer}
         >
-          <Grid item xs>
+          <Grid item xs sx={styles.imgContainer}>
             <Link to="/cutoflamb">
               <img src={Picheadlamb} alt="Lamb" />
             </Link>
           </Grid>
-          <Grid item xs>
+          <Grid item xs sx={styles.imgContainer}>
             <Link to="/cutofchicken">
               <img src={Picheadchicken} alt="Chicken" />
             </Link>

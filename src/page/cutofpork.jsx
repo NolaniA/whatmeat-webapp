@@ -19,6 +19,10 @@ const styles = {
     position: "absolute",
     bottom: "30px",
     right: "200px",
+    transition: "transform 0.3s", // เพิ่ม transition effect
+    "&:hover": {
+      transform: "scale(1.2)", // เพิ่ม transform scale เมื่อ hover
+    },
   },
 };
 
@@ -34,7 +38,7 @@ const CutOfPork = () => {
         marginBottom={10}
       >
         <Grid item sx={{ color: "#FF5D5E" }}>
-          <Typography variant="h1">THE BUTCHER’S GUIDE</Typography>
+          <Typography variant="h1">The Butcher's Guide</Typography>
         </Grid>
         <Grid item sx={{ color: "#FF5D5E" }}>
           <Typography variant="h4">CUT OF PORK</Typography>
