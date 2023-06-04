@@ -493,6 +493,11 @@
   resolved "https://registry.npmjs.org/@fontsource/nosifer/-/nosifer-5.0.0.tgz"
   integrity sha512-o8f8X8XzfQXpStJdONa1DAJ3BQOkf0fDHUMUmM8ALHlDbnffiruc2uStPXiTJikAMjfAeK8+arxT+D/e0uMe4g==
 
+"@fontsource/prompt@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/prompt/-/prompt-5.0.2.tgz#5f1c43af4ce30d7543e9dd0dc25956eea94b47df"
+  integrity sha512-Ca3VmBYl40iC1MO63d4jEKrtslOm6WyG/TtweH39GL5EnCX+vLSRRBskAjP9nXF4hWFQ0DkHCbFk49JWUEiRIQ==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz"

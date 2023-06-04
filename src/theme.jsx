@@ -1,11 +1,16 @@
 import { createTheme } from "@mui/material/styles";
 import "@fontsource/berkshire-swash";
+import "@fontsource/prompt";
 // import CraftBg from "./assets/image/bgs.png";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Berkshire Swash",
-    caption: { fontFamily: "sans-serif", fontSize: "18px", letterSpacing: 0.5 },
+    fontFamily: "prompt",
+    fontSize: 18,
+    h1: {
+      fontFamily: "Berkshire Swash",
+      fontSize: 72,
+    },
   },
   components: {
     MuiAppBar: {
