@@ -9,7 +9,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box>
-        <Home />
+        <Overview />
       </Box>
     </ThemeProvider>
   );
