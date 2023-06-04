@@ -5,12 +5,12 @@ import PicTomato from "../assets/image/Tomatohome.png";
 
 const Home = () => {
   return (
-    <Stack>
+    <Stack height="100vh">
       <Stack>
         <Navbartop />
 
         <Grid container spacing={2} alignItems="center">
-          <Grid item xs={6} textAlign="center">
+          <Grid item xs textAlign="center">
             <Typography variant="h1">Meat Check</Typography>
             <Typography variant="caption">
               Welcome to Meat Check, a tool that helps you explore various meat
@@ -33,7 +33,7 @@ const Home = () => {
             />
           </Grid>
           <Grid item xs={6}>
-            <img src={PicTbone} style={{ transform: "rotate(30deg)" }} />
+            <img src={PicTbone} style={{ height: "70%" }} />
           </Grid>
         </Grid>
       </Stack>
