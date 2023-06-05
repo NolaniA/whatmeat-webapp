@@ -14,15 +14,6 @@ const styles = {
     paddingRight: "20px", // เพิ่มระยะขวาของ Box
     paddingLeft: "20px", // เพิ่มระยะซ้ายของ Box
   },
-  tomatoContainer: {
-    position: "absolute",
-    bottom: "30px",
-    right: "200px",
-    transition: "transform 0.3s", // เพิ่ม transition effect
-    "&:hover": {
-      transform: "scale(1.2)", // เพิ่ม transform scale เมื่อ hover
-    },
-  },
 };
 
 const CutOfLamb = () => {
