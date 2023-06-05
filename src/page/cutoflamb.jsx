@@ -3,8 +3,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Lamb from "../assets/image/LAMB.png";
-import PicTomato from "../assets/image/Tomatohome.png";
-import { Link } from "react-router-dom";
+import TomatoBack from "../component/Layout";
 
 const styles = {
   container: {
@@ -47,11 +46,7 @@ const CutOfLamb = () => {
           <img src={Lamb} alt="lamb" />
         </Grid>
       </Grid>
-      <Box sx={styles.tomatoContainer}>
-        <Link to="/overview">
-          <img src={PicTomato} width="50px" height="50px" />
-        </Link>
-      </Box>
+      <TomatoBack />
     </Box>
   );
 };

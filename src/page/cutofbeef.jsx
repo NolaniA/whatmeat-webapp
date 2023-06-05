@@ -1,58 +1,37 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import Beef from "../assets/image/BEEF.png";
-import PicTomato from "../assets/image/Tomatohome.png";
-import { Link } from "react-router-dom";
+import TomatoBack from "../component/Layout";
 
 const styles = {
   container: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "100vh",
-    paddingRight: "20px", // เพิ่มระยะขวาของ Box
-    paddingLeft: "20px", // เพิ่มระยะซ้ายของ Box
-  },
-  tomatoContainer: {
-    position: "absolute",
-    bottom: "30px",
-    right: "200px",
-    transition: "transform 0.3s", // เพิ่ม transition effect
-    "&:hover": {
-      transform: "scale(1.2)", // เพิ่ม transform scale เมื่อ hover
-    },
+    paddingX: "20px", // เพิ่มระยะขวาของ Box
   },
 };
 
 const CutOfBeef = () => {
   return (
-    <Box sx={styles.container}>
-      <Grid
-        container
-        direction="column"
-        alignItems="center"
-        spacing={2}
-        marginTop={10}
-        marginBottom={10}
-      >
-        <Grid item sx={{ color: "#FF5D5E" }}>
-          <Typography variant="h1">The Butcher's Guide</Typography>
-        </Grid>
-        <Grid item sx={{ color: "#FF5D5E" }}>
-          <Typography variant="h4">CUT OF BEEF</Typography>
+    <Stack height="100vh">
+      <Grid container spacing={2} marginY={10} sx={styles.container}>
+        <Grid item xs={12} sx={{ color: "#FF5D5E" }} textAlign={"center"}>
+          <Typography variant="h1" m={3}>
+            The Butcher's Guide
+          </Typography>
+          <Typography variant="h4" fontSize={25} fontWeight={700}>
+            CUT OF BEEF
+          </Typography>
         </Grid>
         <Grid item>
           <img src={Beef} alt="Beef" />
         </Grid>
+        <TomatoBack />
       </Grid>
-      <Box sx={styles.tomatoContainer}>
-        <Link to="/overview">
-          <img src={PicTomato} width="50px" height="50px" />
-        </Link>
-      </Box>
-    </Box>
+    </Stack>
   );
 };
 

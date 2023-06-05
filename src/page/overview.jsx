@@ -48,17 +48,16 @@ export default function AutoGrid() {
       <Box sx={styles.contentContainer}>
         <Grid
           container
-          spacing={4}
           alignItems="center"
           justifyContent="center"
           sx={styles.gridContainer}
         >
-          <Grid item xs sx={styles.imgContainer}>
+          <Grid item xs={12} lg={2} sx={styles.imgContainer}>
             <Link to="/cutofbeef">
               <img src={Picheadbeef} alt="Beef" />
             </Link>
           </Grid>
-          <Grid item xs={6} md={8}>
+          <Grid item xs={12} lg={5} md={5}>
             <Typography variant="h1" sx={{ marginBottom: "30px" }}>
               The Butcher's Guide
             </Typography>
@@ -79,7 +78,7 @@ export default function AutoGrid() {
               </Button>
             </Typography>
           </Grid>
-          <Grid item xs sx={styles.imgContainer}>
+          <Grid item xs={12} lg={2} sx={styles.imgContainer}>
             <Link to="/cutofpork">
               <img src={Picheadpig} alt="Pig" />
             </Link>
@@ -87,17 +86,16 @@ export default function AutoGrid() {
         </Grid>
         <Grid
           container
-          spacing={4}
           alignItems="center"
           justifyContent="center"
           sx={styles.gridContainer}
         >
-          <Grid item xs sx={styles.imgContainer}>
+          <Grid item xs={12} lg={3} sx={styles.imgContainer}>
             <Link to="/cutoflamb">
               <img src={Picheadlamb} alt="Lamb" />
             </Link>
           </Grid>
-          <Grid item xs sx={styles.imgContainer}>
+          <Grid item xs={12} lg={3} sx={styles.imgContainer}>
             <Link to="/cutofchicken">
               <img src={Picheadchicken} alt="Chicken" />
             </Link>
