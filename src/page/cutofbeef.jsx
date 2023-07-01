@@ -5,6 +5,9 @@ import { Stack, Typography } from "@mui/material";
 import Beef from "../assets/image/BEEF.png";
 import TomatoBack from "../component/Layout";
 import Popover from "@mui/material/Popover";
+//image for popover
+import Tongue from "../assets/image/tonguepeel.png";
+import Cheekmeat from "../assets/image/cheekmeat.png";
 
 const styles = {
   container: {
@@ -81,9 +84,9 @@ const CutOfBeef = () => {
         }}>
         <Box sx={styles.beefpopover}>
           <Typography sx={styles.beefmainpart}>HEAD</Typography>
-          <img src={Beef} />
-          <Typography>description head</Typography>
-          <img src={Beef} />
+          <img src={Tongue} />
+          <Typography>description </Typography>
+          <img src={Cheekmeat} />
           <Typography>description head</Typography>
           <img src={Beef} />
           <Typography>description head</Typography>
