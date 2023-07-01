@@ -8,6 +8,29 @@ import Popover from "@mui/material/Popover";
 //image for popover
 import Tongue from "../assets/image/tonguepeel.png";
 import Cheekmeat from "../assets/image/cheekmeat.png";
+import Beefrib from "../assets/image/Beefrib.png";
+import Bottomsirloin from "../assets/image/bottomsirloin.png";
+import Brisket from "../assets/image/brisketbeef.png";
+import Chuckbeef from "../assets/image/chuckbeef.png";
+import Flank from "../assets/image/flank.png";
+import Fulltenderloin from "../assets/image/fulltenderloin.png";
+import Neckbeef from "../assets/image/neckbeef.png";
+import Oprib from "../assets/image/oprib.png";
+import Porterhousesteak from "../assets/image/porterhousesteak.png";
+import Ribeyeroats from "../assets/image/ribeyeroats.png";
+import Ribeyeroll from "../assets/image/ribeyeroll.png";
+import Ribeyesteak from "../assets/image/ribeyesteak.png";
+import Shank from "../assets/image/shank.png";
+import Shankcut from "../assets/image/shankcut.png";
+import Shortloin from "../assets/image/shortloin.png";
+import Shortplate from "../assets/image/shortplate.png";
+import Shortrib from "../assets/image/shortrib.png";
+import Striploin from "../assets/image/striploin.png";
+import Striploinsteak from "../assets/image/striploinsteak.png";
+import Tbonesteak from "../assets/image/tbonesteak.png";
+import Tenderloin from "../assets/image/tenderloin.png";
+import Tomahawk from "../assets/image/tomahawk.png";
+import Topsirloinsteak from "../assets/image/topsirloinsteak.png";
 
 const styles = {
   container: {
@@ -85,35 +108,63 @@ const CutOfBeef = () => {
         <Box sx={styles.beefpopover}>
           <Typography sx={styles.beefmainpart}>HEAD</Typography>
           <img src={Tongue} />
-          <Typography>description </Typography>
+          <Typography>Tongue </Typography>
           <img src={Cheekmeat} />
-          <Typography>description head</Typography>
-          <img src={Beef} />
-          <Typography>description head</Typography>
+          <Typography>Cheek meat</Typography>
           <Typography sx={styles.beefmainpart}>CHUCK</Typography>
-          <img src={Beef} />
-          <Typography>description chuck</Typography>
+          <img src={Chuckbeef} />
+          <Typography>Chuck</Typography>
+          <img src={Neckbeef} />
+          <Typography>Neck</Typography>
           <Typography sx={styles.beefmainpart}>BRISKET</Typography>
-          <img src={Beef} />
-          <Typography>description brisket</Typography>
+          <img src={Brisket} />
+          <Typography>Brisket</Typography>
           <Typography sx={styles.beefmainpart}>SHALK</Typography>
-          <img src={Beef} />
-          <Typography>description shalk</Typography>
-          <Typography sx={styles.beefmainpart}>rib</Typography>
-          <img src={Beef} />
-          <Typography>description rib</Typography>
+          <img src={Shank} />
+          <Typography>Shalk</Typography>
+          <img src={Shankcut} />
+          <Typography>Shalk cut</Typography>
+          <Typography sx={styles.beefmainpart}>RIB</Typography>
+          <img src={Beefrib} />
+          <Typography>Rib</Typography>
+          <img src={Shortrib} />
+          <Typography>Short rib</Typography>
+          <img src={Tomahawk} />
+          <Typography>Tomahawk</Typography>
+          <img src={Oprib} />
+          <Typography>OP rib</Typography>
+          <img src={Ribeyeroll} />
+          <Typography>Rib eye roll</Typography>
+          <img src={Ribeyeroats} />
+          <Typography>Rib eye roats</Typography>
+          <img src={Ribeyesteak} />
+          <Typography>Rib eye steak</Typography>
           <Typography sx={styles.beefmainpart}>Loin</Typography>
-          <img src={Beef} />
-          <Typography>description loin</Typography>
+          <img src={Shortloin} />
+          <Typography>Short loin</Typography>
+          <img src={Porterhousesteak} />
+          <Typography>Porterhouse steak</Typography>
+          <img src={Tbonesteak} />
+          <Typography>T-bone</Typography>
           <Typography sx={styles.beefmainpart}>sirloin</Typography>
-          <img src={Beef} />
-          <Typography>description sirloin</Typography>
+          <img src={Striploin} />
+          <Typography>Striploin</Typography>
+          <img src={Striploinsteak} />
+          <Typography>Striploin steak</Typography>
+          <img src={Fulltenderloin} />
+          <Typography>Tenderloin</Typography>
+          <img src={Tenderloin} />
+          <Typography>Tenderloin cut</Typography>
+          <img src={Topsirloinsteak} />
+          <Typography>Top sirloin steak</Typography>
+          <img src={Bottomsirloin} />
+          <Typography>Bottom sirloin</Typography>
           <Typography sx={styles.beefmainpart}>plate</Typography>
-          <img src={Beef} />
-          <Typography>description plate</Typography>
+          <img src={Shortplate} />
+          <Typography>Short plate</Typography>
           <Typography sx={styles.beefmainpart}>flank</Typography>
-          <img src={Beef} />
-          <Typography>description flank</Typography>
+          <img src={Flank} />
+          <Typography>Flank</Typography>
           <Typography sx={styles.beefmainpart}>rump/round</Typography>
           <img src={Beef} />
           <Typography>description round</Typography>
