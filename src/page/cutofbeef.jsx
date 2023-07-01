@@ -8,7 +8,7 @@ import Popover from "@mui/material/Popover";
 //image for popover
 import Tongue from "../assets/image/tonguepeel.png";
 import Cheekmeat from "../assets/image/cheekmeat.png";
-import Beefrib from "../assets/image/Beefrib.png";
+import Beefrib from "../assets/image/beefrib.png";
 import Bottomsirloin from "../assets/image/bottomsirloin.png";
 import Brisket from "../assets/image/brisketbeef.png";
 import Chuckbeef from "../assets/image/chuckbeef.png";
