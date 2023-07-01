@@ -20,7 +20,7 @@ import Porterhousesteak from "../assets/image/porterhousesteak.png";
 import Ribeyeroats from "../assets/image/ribeyeroats.png";
 import Ribeyeroll from "../assets/image/ribeyeroll.png";
 import Ribeyesteak from "../assets/image/ribeyesteak.png";
-import Shank from "../assets/image/shank.png";
+import Shank from "../assets/image/fullshank.png";
 import Shankcut from "../assets/image/shankcut.png";
 import Shortloin from "../assets/image/shortloin.png";
 import Shortplate from "../assets/image/shortplate.png";
