@@ -89,7 +89,7 @@ const CutOfBeef = () => {
           <Typography variant="h4">CUT OF BEEF</Typography>
         </Grid>
         <Grid item sx={styles.beefhover} onClick={handleClick}>
-          <img src={Beef} alt="Beef" width="600px" />
+          <img src={Beef} alt="Beef" width="100%" />
         </Grid>
       </Grid>
       <Popover
@@ -107,66 +107,66 @@ const CutOfBeef = () => {
         }}>
         <Box sx={styles.beefpopover}>
           <Typography sx={styles.beefmainpart}>HEAD</Typography>
-          <img src={Tongue} />
+          <img src={Tongue} width="100%" />
           <Typography>Tongue </Typography>
-          <img src={Cheekmeat} />
+          <img src={Cheekmeat} width="100%" />
           <Typography>Cheek meat</Typography>
           <Typography sx={styles.beefmainpart}>CHUCK</Typography>
-          <img src={Chuckbeef} />
+          <img src={Chuckbeef} width="100%" />
           <Typography>Chuck</Typography>
-          <img src={Neckbeef} />
+          <img src={Neckbeef} width="100%" />
           <Typography>Neck</Typography>
           <Typography sx={styles.beefmainpart}>BRISKET</Typography>
-          <img src={Brisket} />
+          <img src={Brisket} width="100%" />
           <Typography>Brisket</Typography>
           <Typography sx={styles.beefmainpart}>SHALK</Typography>
-          <img src={Shank} />
+          <img src={Shank} width="100%" />
           <Typography>Shalk</Typography>
-          <img src={Shankcut} />
+          <img src={Shankcut} width="100%" />
           <Typography>Shalk cut</Typography>
           <Typography sx={styles.beefmainpart}>RIB</Typography>
-          <img src={Beefrib} />
+          <img src={Beefrib} width="100%" />
           <Typography>Rib</Typography>
-          <img src={Shortrib} />
+          <img src={Shortrib} width="100%" />
           <Typography>Short rib</Typography>
-          <img src={Tomahawk} />
+          <img src={Tomahawk} width="100%" />
           <Typography>Tomahawk</Typography>
-          <img src={Oprib} />
+          <img src={Oprib} width="100%" />
           <Typography>OP rib</Typography>
-          <img src={Ribeyeroll} />
+          <img src={Ribeyeroll} width="100%" />
           <Typography>Rib eye roll</Typography>
-          <img src={Ribeyeroats} />
+          <img src={Ribeyeroats} width="100%" />
           <Typography>Rib eye roats</Typography>
-          <img src={Ribeyesteak} />
+          <img src={Ribeyesteak} width="100%" />
           <Typography>Rib eye steak</Typography>
           <Typography sx={styles.beefmainpart}>Loin</Typography>
-          <img src={Shortloin} />
+          <img src={Shortloin} width="100%" />
           <Typography>Short loin</Typography>
-          <img src={Porterhousesteak} />
+          <img src={Porterhousesteak} width="100%" />
           <Typography>Porterhouse steak</Typography>
-          <img src={Tbonesteak} />
+          <img src={Tbonesteak} width="100%" />
           <Typography>T-bone</Typography>
           <Typography sx={styles.beefmainpart}>sirloin</Typography>
-          <img src={Striploin} />
+          <img src={Striploin} width="100%" />
           <Typography>Striploin</Typography>
-          <img src={Striploinsteak} />
+          <img src={Striploinsteak} width="100%" />
           <Typography>Striploin steak</Typography>
-          <img src={Fulltenderloin} />
+          <img src={Fulltenderloin} width="100%" />
           <Typography>Tenderloin</Typography>
-          <img src={Tenderloin} />
+          <img src={Tenderloin} width="100%" />
           <Typography>Tenderloin cut</Typography>
-          <img src={Topsirloinsteak} />
+          <img src={Topsirloinsteak} width="100%" />
           <Typography>Top sirloin steak</Typography>
-          <img src={Bottomsirloin} />
+          <img src={Bottomsirloin} width="100%" />
           <Typography>Bottom sirloin</Typography>
           <Typography sx={styles.beefmainpart}>plate</Typography>
-          <img src={Shortplate} />
+          <img src={Shortplate} width="100%" />
           <Typography>Short plate</Typography>
           <Typography sx={styles.beefmainpart}>flank</Typography>
-          <img src={Flank} />
+          <img src={Flank} width="100%" />
           <Typography>Flank</Typography>
           <Typography sx={styles.beefmainpart}>rump/round</Typography>
-          <img src={Beef} />
+          <img src={Beef} width="100%" />
           <Typography>description round</Typography>
         </Box>
       </Popover>
